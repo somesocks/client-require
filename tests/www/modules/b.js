@@ -1,4 +1,4 @@
-var a = require('test-packages/a.js');
+var a = require('modules/a.js');
 
 console.log("package b loaded");
 

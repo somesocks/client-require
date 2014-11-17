@@ -1,5 +1,5 @@
-var b = require('test-packages/b.js');
-var a = require('test-packages/a.js');
+var b = require('modules/b.js');
+var a = require('modules/a.js');
 
 console.log("package c loaded");
 
