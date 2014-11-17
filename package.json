@@ -1,0 +1,24 @@
+{
+  "name": "client-require",
+  "version": "0.0.1",
+  "description": "A simple node-style module loader",
+  "main": "client-require.js",
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/somesocks/client-require.git"
+  },
+  "keywords": [
+    "module",
+    "node",
+    "require"
+  ],
+  "author": "James Larsen (somesocks@gmail.com)",
+  "license": "Apache v2",
+  "bugs": {
+    "url": "https://github.com/somesocks/client-require/issues"
+  },
+  "homepage": "https://github.com/somesocks/client-require"
+}
