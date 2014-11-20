@@ -7,13 +7,15 @@ var c = require('c');
 console.log(c);
 
 //should be undefined
-console.log(window.testA);
+console.log("testA " + window.testA);
+console.log("TESTA " + window.TESTA);
 
 //should be 'testB'
 console.log(testB);
 
 //should be 'testC'
 console.log(testC);
+
 
 require('modules/a0.js',false);
 require('modules/a1.js',false);
@@ -37,4 +39,7 @@ var a7 = require('modules/a7.js');
 var a8 = require('modules/a8.js');
 var a9 = require('modules/a9.js');
 
+var react = require('modules/react.js');
 
+console.log('react ' + react);
+console.log('React ' + React);

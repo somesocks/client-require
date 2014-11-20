@@ -8,12 +8,13 @@
 	};
 
 	var load = function(code,url,modules){
-		var module = this;
+		var module = {};
 		var global = window;
-		var window = window;
+
+		//TODO: make a window shim to fix namespace pollution
+		//var window = {};//window;
 
 		eval(code);
-
 		modules[url] = module;
 	};
 
@@ -34,7 +35,7 @@
 		if (!now) {return;}
   
 		if (request.status === 200) {
-			load.call({},request.responseText,url,modules);
+			load(request.responseText,url,modules);
 			return modules[url].exports;
 		}else{
 			throw "ModuleError: failed to load " + url + " " + request.status;
